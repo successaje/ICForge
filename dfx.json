@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "icforge_backend": {
+      "main": "src/icforge_backend/main.mo",
+      "type": "motoko"
+    },
+    "icforge_frontend": {
+      "dependencies": [
+        "icforge_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icforge_frontend/src/index.html"
+      },
+      "source": [
+        "src/icforge_frontend/assets",
+        "dist/icforge_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
