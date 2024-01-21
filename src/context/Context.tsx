@@ -19,7 +19,7 @@ import {
 } from "../declarations/icforge_backend";
 
 interface AuthContextType {
-  isAuthenticated: boolean;
+  isAuthenticated: boolean | null;
   login: () => void;
   logout: () => void;
   identity: any;
@@ -28,8 +28,8 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-const network = "ic";
-const localhost = "http://localhost:4943";
+const network = process.env.DFX_NETWORK || "local";
+const localhost = "http://localhost:3000";
 const host = "https://icp0.io";
 
 interface DefaultOptions {
@@ -52,7 +52,7 @@ const defaultOptions: DefaultOptions = {
 };
 
 export const useAuthClient = (options = defaultOptions) => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [authClient, setAuthClient] = useState<AuthClient | null>(null);
   const [identity, setIdentity] = useState<any>(null);
   const [backendActor, setBackendActor] =
