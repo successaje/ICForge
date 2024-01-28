@@ -3,11 +3,11 @@ module {
 
 
     public type TokenMeta = {
-        owner : Principal;
-        name : Text;
-        symbol : Text;
-        decimal : Nat;
-        totalSuply : Nat;
+        _owner : Principal;
+        _name : Text;
+        _symbol : Text;
+        _decimals : Nat;
+        _initialSupply : Nat;
     };
 
     public type MetaData = {
