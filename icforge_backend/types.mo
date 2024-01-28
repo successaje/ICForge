@@ -15,6 +15,7 @@ module {
         token : TokenMeta;
         canister_id : Principal;
         created_at : Int;
+        isController : Bool
     };
 
 
