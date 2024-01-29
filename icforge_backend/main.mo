@@ -24,7 +24,7 @@ shared ({ caller = owner }) actor class Forge() = this {
     do ? {
       var buffer = Buffer.Buffer<Meta>(0);
       for ((user, token) in tokens.entries()) {
-        if (user == caller) {
+        if (token.token._owner == caller) {
           buffer.add(token);
         };
       };
