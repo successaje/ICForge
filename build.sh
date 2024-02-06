@@ -23,3 +23,4 @@ record { e8s=100_000_000_000 } } } ; archive_options = opt record {num_blocks_to
     controller_id = principal  \"${ARCHIVE_CONTROLLER}\"; }; send_whitelist = vec {}}})" --specified-id ryjl3-tyaaa-aaaaa-aaaba-cai
 
 dfx deploy
+

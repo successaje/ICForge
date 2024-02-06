@@ -2,6 +2,7 @@ import Types "types";
 import Management "management";
 
 import ERC20 "token_standards/erc20/main";
+import DIP20 "token_standards/src/token";
 
 import Principal "mo:base/Principal";
 import HashMap "mo:base/HashMap";
@@ -9,6 +10,7 @@ import Array "mo:base/Array";
 import Buffer "mo:base/Buffer";
 import Cycles "mo:base/ExperimentalCycles";
 import Time "mo:base/Time";
+import Nat8 "mo:base/Nat8";
 
 shared ({ caller = owner }) actor class Forge() = this {
 
@@ -53,7 +55,7 @@ shared ({ caller = owner }) actor class Forge() = this {
     _initialSupply : Nat;
   };
 
-  public shared ({ caller }) func deployToken(_name : Text, _symbol : Text, _decimals : Nat, _initialSupply : Nat, standard : Text) : async ?Meta {
+  public shared ({ caller }) func deployERCToken(_name : Text, _symbol : Text, _logo : Text, _decimals : Nat, _initialSupply : Nat, _fee : Nat, standard : Text) : async ?Meta {
     Cycles.add(cycles);
     let meta : TokenMeta__1 = {
       _name;
@@ -66,18 +68,65 @@ shared ({ caller = owner }) actor class Forge() = this {
       _owner;
       _name;
       _symbol;
+      _logo;
       _decimals;
       _initialSupply;
+      _fee;
     };
 
     // if (standard == "erc20"){
-      
+
     // }
 
     let token = await ERC20.Token(caller, meta);
     let token_id = Principal.fromActor(token);
 
-    let  tokenMeta : Meta = {
+    let tokenMeta : Meta = {
+      id = 0;
+      token = _meta;
+      canister_id = token_id;
+      created_at = Time.now();
+      isController = true;
+    };
+    tokens.put(token_id, tokenMeta);
+    return ?tokenMeta;
+  };
+
+  public shared ({ caller }) func deployDIPToken(_name : Text, _symbol : Text, _decimals : Nat, _logo : Text, _initialSupply : Nat, _fee : Nat, standard : Text) : async ?Meta {
+    Cycles.add(cycles);
+    // let meta : TokenMeta__1 = {
+    //   _name;
+    //   _symbol;
+    //   decimals;
+    //   _initialSupply;
+    // };
+    let _owner = caller;
+    // let _decimals = Nat8.fromNat(decimals);
+    let _meta = {
+      _logo;
+      _name;
+      _symbol;
+      _decimals;
+      _initialSupply;
+      _owner;
+      _fee;
+    };
+    // if (standard == "erc20"){
+
+    // }
+
+    let token = await DIP20.Token(
+      _logo,
+      _name,
+      _symbol,
+      Nat8.fromNat(_decimals),
+      _initialSupply,
+      _owner,
+      _fee,
+    );
+    let token_id = Principal.fromActor(token);
+
+    let tokenMeta : Meta = {
       id = 0;
       token = _meta;
       canister_id = token_id;
