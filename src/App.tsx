@@ -6,37 +6,39 @@ import {
   Navigate,
 } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
 import { useState } from "react";
-import Landing from "./pages/Landing";
-import { useAuth } from "./context/Context";
+import Landing from "./pages/landingpage";
+// import { useAuth } from "./context/Context";
 
 const App = () => {
-const {isAuthenticated} = useAuth()
+// const {isAuthenticated} = useAuth()
 
-  const ProtectedRoutes = () => {
-    if (isAuthenticated) {
-      return <Outlet />;
-    } else if (isAuthenticated === false) {
-      return <Landing />;
-    } else if (isAuthenticated === null) {
-      return <div>Loading...</div>;
-    } 
-  };
+  // const ProtectedRoutes = () => {
+  //   if (isAuthenticated) {
+  //     return <Outlet />;
+  //   } else if (isAuthenticated === false) {
+  //     return <Landing />;
+  //   } else if (isAuthenticated === null) {
+  //     return <div>Loading...</div>;
+  //   } 
+  // };
 
-  console.log(isAuthenticated)
+  // console.log(isAuthenticated)
   return (
     <BrowserRouter>
       <Routes>
         <Route
-          path="/login"
+           index
           element={<Landing />}
         />
-        <Route element={<ProtectedRoutes />}>
+        {/* <Route element={<ProtectedRoutes />}>
           <Route element={<Layout />}>
             <Route index element={<Home />} />
           </Route>
-        </Route>
+        </Route> */}
+          {/* <Route element={<Layout />}>
+            <Route index element={<Home />} />
+          </Route> */}
       </Routes>
     </BrowserRouter>
   );
