@@ -9,6 +9,9 @@ import Layout from "./layout";
 import { useState } from "react";
 import Landing from "./pages/landingpage";
 import DashboardPage from "./pages/dashboard";
+import CarnistersPage from "./pages/carnisters";
+import WalletPage from "./pages/wallet";
+import TransactionsPage from "./pages/transactions";
 // import { useAuth } from "./context/Context";
 
 const App = () => {
@@ -32,7 +35,16 @@ const App = () => {
 
         {/* Add Protected Routes */}
         <Route element={<Layout />}>
-          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/wallet" element={<DashboardPage />} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/carniters" element={<CarnistersPage />} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/dashboard" element={<WalletPage />} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/transactions" element={<TransactionsPage />} />
         </Route>
         {/* <Route element={<ProtectedRoutes />}>
           <Route element={<Layout />}>
