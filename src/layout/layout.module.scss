@@ -1,0 +1,10 @@
+.layout_container{
+    padding: 1rem 0.7rem;
+    background-color: #331D46;
+    height: 100vh;
+
+    .layout_container_body{
+        display: flex;
+        gap: 1rem;
+    }
+}

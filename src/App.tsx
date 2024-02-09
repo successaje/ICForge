@@ -5,13 +5,14 @@ import {
   Outlet,
   Navigate,
 } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./layout";
 import { useState } from "react";
 import Landing from "./pages/landingpage";
+import DashboardPage from "./pages/dashboard";
 // import { useAuth } from "./context/Context";
 
 const App = () => {
-// const {isAuthenticated} = useAuth()
+  // const {isAuthenticated} = useAuth()
 
   // const ProtectedRoutes = () => {
   //   if (isAuthenticated) {
@@ -20,25 +21,24 @@ const App = () => {
   //     return <Landing />;
   //   } else if (isAuthenticated === null) {
   //     return <div>Loading...</div>;
-  //   } 
+  //   }
   // };
 
   // console.log(isAuthenticated)
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-           index
-          element={<Landing />}
-        />
+        <Route index element={<Landing />} />
+
+        {/* Add Protected Routes */}
+        <Route element={<Layout />}>
+          <Route path="/dashboard" element={<DashboardPage />} />
+        </Route>
         {/* <Route element={<ProtectedRoutes />}>
           <Route element={<Layout />}>
             <Route index element={<Home />} />
           </Route>
         </Route> */}
-          {/* <Route element={<Layout />}>
-            <Route index element={<Home />} />
-          </Route> */}
       </Routes>
     </BrowserRouter>
   );
