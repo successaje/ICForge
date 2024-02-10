@@ -9,7 +9,13 @@ ICForge is a no-code platform that allows users to easily deploy and manage toke
 - **User-friendly Interface:** A simple and intuitive web interface for users to input configurations and manage their token contracts.
 
 ## Tasks
-# frontend
+
+## Frontend Routes
+- Dashboar `/dashboard`
+- Wallet `/wallet`
+- Carnisters `/carniters`
+- Transactions `/transactions`
+# Frontend
 - Set up the basic structure of the user interface.
 - Implement a form for users tauthentication like II.
 - set up API requests to interact with the backend.
@@ -20,7 +26,7 @@ ICForge is a no-code platform that allows users to easily deploy and manage toke
 - Handle errors and provide appropriate feedback to users.
 - Design and implement a user interface for managing deployed smart contracts (optional).
 
-# backend
+# Backend
 - Set up the Motoko backend project structure.
 - Choose and implement a supported token standard for smart contracts.
 - Create an endpoint for handling user requests to deploy token contracts.
