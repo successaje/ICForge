@@ -35,13 +35,13 @@ const App = () => {
 
         {/* Add Protected Routes */}
         <Route element={<Layout />}>
-          <Route path="/wallet" element={<DashboardPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
         </Route>
         <Route element={<Layout />}>
           <Route path="/carniters" element={<CarnistersPage />} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/dashboard" element={<WalletPage />} />
+          <Route path="/wallet" element={<WalletPage />} />
         </Route>
         <Route element={<Layout />}>
           <Route path="/transactions" element={<TransactionsPage />} />
