@@ -1,0 +1,37 @@
+.transactions_container {
+  height: 85vh;
+  overflow-y: scroll;
+  background-color: #fff;
+  width: 93%;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  //   margin: 2rem 0;
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+
+    border-radius: 15px;
+    thead {
+      background: #cac6e1;
+      border-radius: 5px;
+      color: white;
+      color: #000000a6;
+    }
+
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      border-bottom: 1px solid #9a6bc4;
+      text-align: left;
+      padding: 20px;
+    }
+  }
+}

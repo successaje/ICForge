@@ -1,6 +1,6 @@
 //My Carnisters
 
-const MyCarnister = [
+export const MyCarnister = [
   {
     id: 1,
     date: "18th Nov, 2021",
@@ -43,4 +43,44 @@ const MyCarnister = [
   },
 ];
 
-export default MyCarnister;
+export const MyTransactions = [
+  {
+    id: 1,
+    date: "01/12/24",
+    type: "Token standard",
+    from: "Ghdgw....dgyees",
+    to: "sghs5...shshsh",
+    status: "0.0009 ICP",
+  },
+  {
+    id: 2,
+    date: "01/12/24",
+    type: "Token standard",
+    from: "Ghdgw....dgyees",
+    to: "sghs5...shshsh",
+    status: "0.0009 ICP",
+  },
+  {
+    id: 3,
+    date: "01/12/24",
+    type: "Token standard",
+    from: "Ghdgw....dgyees",
+    to: "sghs5...shshsh",
+    status: "0.0009 ICP",
+  },
+  {
+    date: "01/12/24",
+    type: "Token standard",
+    from: "Ghdgw....dgyees",
+    to: "sghs5...shshsh",
+    status: "0.0009 ICP",
+  },
+  {
+    id: 5,
+    date: "01/12/24",
+    type: "Token standard",
+    from: "Ghdgw....dgyees",
+    to: "sghs5...shshsh",
+    status: "0.0009 ICP",
+  },
+];

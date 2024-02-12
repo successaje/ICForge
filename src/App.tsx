@@ -12,10 +12,9 @@ import DashboardPage from "./pages/dashboard";
 import CarnistersPage from "./pages/carnisters";
 import WalletPage from "./pages/wallet";
 import TransactionsPage from "./pages/transactions";
-// import { useAuth } from "./context/Context";
+import { useAuth } from "./context/Context";
 
 const App = () => {
-  // const {isAuthenticated} = useAuth()
 
   // const ProtectedRoutes = () => {
   //   if (isAuthenticated) {

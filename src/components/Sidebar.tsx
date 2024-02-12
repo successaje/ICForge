@@ -20,7 +20,7 @@ const Sidebar = () => {
             <TiHomeOutline />
           </div>
         </NavLink>
-        <NavLink to="/wallet">
+        {/* <NavLink to="/wallet">
           <div
             className={`${
               location.pathname === "/wallet" && styles.active_route
@@ -28,7 +28,7 @@ const Sidebar = () => {
           >
             <TbWallet />
           </div>
-        </NavLink>
+        </NavLink> */}
 
         <NavLink to="/carniters">
           <div
