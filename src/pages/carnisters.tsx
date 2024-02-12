@@ -1,9 +1,7 @@
-import React from "react";
+import Carnisters from "../components/Carnisters";
 
 const CarnistersPage = () => {
-  return (
-    <div>carnisters</div>
-  )
-}
+  return <Carnisters />;
+};
 
 export default CarnistersPage;

@@ -84,3 +84,57 @@ export const MyTransactions = [
     status: "0.0009 ICP",
   },
 ];
+
+
+export const MyCarnisterCards = [
+  {
+    id: 1,
+    title: "Infinite",
+    symbol: "ICRC-1",
+    address: "ef44r-ytty6-yrtwe6-iii99-oooo0-gyyy6",
+    carnisterId: "222-444-555-777-888",
+    balance: "15500.00",
+    volume: "2,800000.00",
+    rate: "2,800000.00",
+  },
+  {
+    id: 2,
+    title: "Infinite",
+    symbol: "ICRC-1",
+    address: "ef44r-ytty6-yrtwe6-iii99-oooo0-gyyy6",
+    carnisterId: "222-444-555-777-888",
+    balance: "15500.00",
+    volume: "2,800000.00",
+    rate: "2,800000.00",
+  },
+  {
+    id: 3,
+    title: "Infinite",
+    symbol: "ICRC-1",
+    address: "ef44r-ytty6-yrtwe6-iii99-oooo0-gyyy6",
+    carnisterId: "222-444-555-777-888",
+    balance: "15500.00",
+    volume: "2,800000.00",
+    rate: "2,800000.00",
+  },
+  {
+    id: 4,
+    title: "Infinite",
+    symbol: "ICRC-1",
+    address: "ef44r-ytty6-yrtwe6-iii99-oooo0-gyyy6",
+    carnisterId: "222-444-555-777-888",
+    balance: "15500.00",
+    volume: "2,800000.00",
+    rate: "2,800000.00",
+  },
+  {
+    id: 5,
+    title: "Infinite",
+    symbol: "ICRC-1",
+    address: "ef44r-ytty6-yrtwe6-iii99-oooo0-gyyy6",
+    carnisterId: "222-444-555-777-888",
+    balance: "15500.00",
+    volume: "2,800000.00",
+    rate: "2,800000.00",
+  },
+];

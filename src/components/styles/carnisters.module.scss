@@ -1,0 +1,30 @@
+.carnister_container {
+  height: 85vh;
+  overflow-y: scroll;
+  background: linear-gradient(
+    180deg,
+    #dbd6df 0%,
+    rgba(180, 180, 180, 0.58) 100%
+  );
+
+  width: 93%;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+  }
+  p {
+    margin-bottom: 2rem;
+    color: #0000007d;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+
+  .mycarnisters_container{
+    
+  }
+}
