@@ -6,10 +6,8 @@ module {
         _owner : Principal;
         _name : Text;
         _symbol : Text;
-        _logo : Text;
         _decimals : Nat;
         _initialSupply : Nat;
-        _fee : Nat
     };
 
     public type MetaData = {

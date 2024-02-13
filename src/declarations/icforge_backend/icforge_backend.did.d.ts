@@ -2,18 +2,34 @@ import type { Principal } from '@dfinity/principal';
 import type { ActorMethod } from '@dfinity/agent';
 
 export interface Forge {
+<<<<<<< HEAD
+=======
+  'deployDIPToken' : ActorMethod<
+    [string, string, bigint, string, bigint, bigint, string],
+    [] | [Meta]
+  >,
+  'deployERCToken' : ActorMethod<
+    [string, string, string, bigint, bigint, bigint, string],
+    [] | [Meta]
+  >,
+>>>>>>> d245ee6 (bug fixes)
   'getCanisterStatus' : ActorMethod<
     [Principal],
     [] | [canister_status_response]
   >,
   'getMyTokens' : ActorMethod<[], [] | [Array<Meta>]>,
   'getTokenMeta' : ActorMethod<[Principal], [] | [Meta]>,
+<<<<<<< HEAD
+=======
+  'updateController' : ActorMethod<[Principal, Array<Principal>], boolean>,
+>>>>>>> d245ee6 (bug fixes)
 }
 export interface Meta {
   'id' : bigint,
   'token' : TokenMeta,
   'canister_id' : Principal,
   'created_at' : bigint,
+<<<<<<< HEAD
 }
 export interface TokenMeta {
   'owner' : Principal,
@@ -21,6 +37,18 @@ export interface TokenMeta {
   'totalSuply' : bigint,
   'decimal' : bigint,
   'symbol' : string,
+=======
+  'isController' : boolean,
+}
+export interface TokenMeta {
+  '_owner' : Principal,
+  '_fee' : bigint,
+  '_decimals' : bigint,
+  '_symbol' : string,
+  '_initialSupply' : bigint,
+  '_logo' : string,
+  '_name' : string,
+>>>>>>> d245ee6 (bug fixes)
 }
 export interface canister_status_response {
   'status' : { 'stopped' : null } |

@@ -19,23 +19,46 @@ type canister_status_response =
  };
 type TokenMeta = 
  record {
+<<<<<<< HEAD
    decimal: nat;
    name: text;
    owner: principal;
    symbol: text;
    totalSuply: nat;
+=======
+   _decimals: nat;
+   _fee: nat;
+   _initialSupply: nat;
+   _logo: text;
+   _name: text;
+   _owner: principal;
+   _symbol: text;
+>>>>>>> d245ee6 (bug fixes)
  };
 type Meta = 
  record {
    canister_id: principal;
    created_at: int;
    id: nat;
+<<<<<<< HEAD
+=======
+   isController: bool;
+>>>>>>> d245ee6 (bug fixes)
    token: TokenMeta;
  };
 type Forge = 
  service {
+<<<<<<< HEAD
    getCanisterStatus: (principal) -> (opt canister_status_response);
    getMyTokens: () -> (opt vec Meta) query;
    getTokenMeta: (principal) -> (opt Meta) query;
+=======
+   deployDIPToken: (text, text, nat, text, nat, nat, text) -> (opt Meta);
+   deployERCToken: (text, text, text, nat, nat, nat, text) -> (opt Meta);
+   getCanisterStatus: (principal) -> (opt canister_status_response);
+   getMyTokens: () -> (opt vec Meta) query;
+   getTokenMeta: (principal) -> (opt Meta) query;
+   updateController: (principal, vec principal) -> (bool);
+>>>>>>> d245ee6 (bug fixes)
  };
 service : () -> Forge

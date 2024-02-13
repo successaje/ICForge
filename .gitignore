@@ -19,5 +19,6 @@ target/
 node_modules/
 dist/
 
+src/declarations
 # environment variables
 .env
