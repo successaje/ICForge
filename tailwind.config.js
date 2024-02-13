@@ -16,6 +16,8 @@ module.exports = {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
+        montreal: ['montreal', 'sans-serif'],
+        montrealBold: ['montreal-bold', 'sans-serif'],
       },
     },
     screens: {

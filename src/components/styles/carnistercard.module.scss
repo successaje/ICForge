@@ -1,0 +1,70 @@
+.carnister_card__container {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.3rem;
+  .cc_c__body {
+    display: flex;
+    justify-content: space-between;
+    .cc_c__body_div {
+      display: flex;
+      gap: 1rem;
+
+      .cc_c__body_texts {
+        .cc_c__body_title {
+          display: flex;
+          gap: 1rem;
+          h4 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          h5 {
+            background-color: #b3b3b3;
+            border-radius: 50px;
+            font-size: 13px;
+            padding: 0.4rem 0.4rem;
+          }
+        }
+        .cc_c__body_address {
+          display: flex;
+          gap: 1rem;
+
+          svg {
+            margin-top: 0.2rem;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  .cc_c__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cc_c__footer_text {
+      h5 {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #8247b8;
+      }
+    }
+  }
+}

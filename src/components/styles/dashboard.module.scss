@@ -1,0 +1,153 @@
+.dashboard_container {
+  height: 85vh;
+  overflow-y: scroll;
+  background-color: #fff;
+  width: 93%;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+
+  .deploy_carnister_container {
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: #000000;
+    }
+
+    .deploy_carnister_tab {
+      margin: 1rem 2rem;
+      padding: 1rem 0;
+      cursor: pointer;
+      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #000000;
+      color: #fff;
+    }
+  }
+  .mywallet_container {
+    margin: 2rem 0;
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: #000000;
+    }
+    .mywallet_container_cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 1rem 0;
+
+      .mywallet_container_leftcard {
+        cursor: pointer;
+        width: 100%;
+        background: linear-gradient(
+          99.62deg,
+          #c6b7d4 42.75%,
+          rgba(198, 183, 212, 0) 99.71%
+        );
+        border-radius: 20px;
+        padding: 0.9rem 1.3rem;
+        box-shadow: 0px 4px 4px 0px #00000040;
+
+        .mywallet_container_leftcard_header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            font-size: 20px;
+            font-weight: 700;
+          }
+          margin-bottom: 1rem;
+        }
+        .mywallet_container_leftcard_body {
+          cursor: pointer;
+          margin-bottom: 1rem;
+          color: #fff;
+          h4 {
+            font-weight: 700;
+            font-size: 32px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .mywallet_container_leftcard_footer {
+          div {
+            display: flex;
+            justify-content: space-between;
+          }
+          p {
+            display: flex;
+            gap: 1rem;
+          }
+        }
+      }
+      .mywallet_container_rightcard {
+        width: 100%;
+        background: linear-gradient(
+          99.62deg,
+          #6518a9 42.75%,
+          rgba(124, 22, 214, 0.69) 99.71%
+        );
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 0.9rem 1.3rem;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        color: #fff;
+
+        .mywallet_container_rightcard_header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            font-size: 16px;
+            font-weight: 700;
+          }
+          margin-bottom: 1rem;
+        }
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg:nth-child(2) {
+            margin-left: 20%;
+          }
+        }
+        h5 {
+          text-align: center;
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+
+  .mycarnister_container {
+    margin: 2rem 0;
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: #000000;
+      margin-bottom: 2rem;
+    }
+    table {
+      width: 100%;
+      background: #321c46;
+      color: white;
+      border-radius: 15px;
+
+      td {
+        text-align: left;
+        padding: 8px;
+      }
+      th {
+        border-bottom: 1px solid #9a6bc4;
+        text-align: left;
+        padding: 20px;
+      }
+    }
+  }
+}
