@@ -3,6 +3,8 @@
 ## ICForge
 ICForge is a no-code platform that allows users to easily deploy and manage token standard smart contracts on the Internet Computer. This project leverages the Motoko programming language for smart contract development.
 
+figma link - https://www.figma.com/file/it6fkCD3XpEGKO7o0yc13G/Success-Crypto?type=design&node-id=0%3A1&mode=design&t=80TcWw1QwBrOt3Ir-1
+
 ## Features
 - **Easy Deployment**: Deploy smart contracts on the Internet Computer blockchain without writing code.
 - **TokeDeployment:** Users can configure and deploy supported token standard smart contracts without writing code.
