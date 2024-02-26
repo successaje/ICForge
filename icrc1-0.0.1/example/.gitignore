@@ -10,19 +10,6 @@
 # dfx temporary files
 .dfx/
 
-# generated files
-
-# rust
-target/
-
 # frontend code
 node_modules/
 dist/
-
-src/declarations
-# environment variables
-.env
-
-
-.vessel
-icrc1-0.01

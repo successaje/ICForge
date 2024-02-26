@@ -20,12 +20,15 @@ type canister_status_response =
 type TokenMeta = 
  record {
 <<<<<<< HEAD
+<<<<<<< HEAD
    decimal: nat;
    name: text;
    owner: principal;
    symbol: text;
    totalSuply: nat;
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
    _decimals: nat;
    _fee: nat;
    _initialSupply: nat;
@@ -33,6 +36,9 @@ type TokenMeta =
    _name: text;
    _owner: principal;
    _symbol: text;
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
  };
 type Meta = 
@@ -41,6 +47,10 @@ type Meta =
    created_at: int;
    id: nat;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+   isController: bool;
+>>>>>>> d245ee6 (bug fixes)
 =======
    isController: bool;
 >>>>>>> d245ee6 (bug fixes)
@@ -49,16 +59,22 @@ type Meta =
 type Forge = 
  service {
 <<<<<<< HEAD
+<<<<<<< HEAD
    getCanisterStatus: (principal) -> (opt canister_status_response);
    getMyTokens: () -> (opt vec Meta) query;
    getTokenMeta: (principal) -> (opt Meta) query;
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
    deployDIPToken: (text, text, nat, text, nat, nat, text) -> (opt Meta);
    deployERCToken: (text, text, text, nat, nat, nat, text) -> (opt Meta);
    getCanisterStatus: (principal) -> (opt canister_status_response);
    getMyTokens: () -> (opt vec Meta) query;
    getTokenMeta: (principal) -> (opt Meta) query;
    updateController: (principal, vec principal) -> (bool);
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
  };
 service : () -> Forge

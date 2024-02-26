@@ -3,7 +3,10 @@ import type { ActorMethod } from '@dfinity/agent';
 
 export interface Forge {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
   'deployDIPToken' : ActorMethod<
     [string, string, bigint, string, bigint, bigint, string],
     [] | [Meta]
@@ -12,6 +15,9 @@ export interface Forge {
     [string, string, string, bigint, bigint, bigint, string],
     [] | [Meta]
   >,
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
   'getCanisterStatus' : ActorMethod<
     [Principal],
@@ -20,6 +26,10 @@ export interface Forge {
   'getMyTokens' : ActorMethod<[], [] | [Array<Meta>]>,
   'getTokenMeta' : ActorMethod<[Principal], [] | [Meta]>,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  'updateController' : ActorMethod<[Principal, Array<Principal>], boolean>,
+>>>>>>> d245ee6 (bug fixes)
 =======
   'updateController' : ActorMethod<[Principal, Array<Principal>], boolean>,
 >>>>>>> d245ee6 (bug fixes)
@@ -30,6 +40,7 @@ export interface Meta {
   'canister_id' : Principal,
   'created_at' : bigint,
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 export interface TokenMeta {
   'owner' : Principal,
@@ -38,6 +49,8 @@ export interface TokenMeta {
   'decimal' : bigint,
   'symbol' : string,
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
   'isController' : boolean,
 }
 export interface TokenMeta {
@@ -48,6 +61,9 @@ export interface TokenMeta {
   '_initialSupply' : bigint,
   '_logo' : string,
   '_name' : string,
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
 }
 export interface canister_status_response {

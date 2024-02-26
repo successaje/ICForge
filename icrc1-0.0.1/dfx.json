@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "dfx": "0.12.1",
+    "canisters": {
+        "icrc1": {
+            "type": "motoko",
+            "main": "src/ICRC1/Canisters/Token.mo"
+        },
+        "rosetta": {
+            "type": "motoko",
+            "main": "src/ICRC1/Canisters/Rosetta.mo"
+        },
+        "test": {
+            "type": "motoko",
+            "main": "tests/ActorTest.mo",
+            "args": "-v --compacting-gc"
+        }
+    },
+    "defaults": {
+        "build": {
+            "packtool": "mops sources",
+            "args": ""
+        }
+    },
+    "networks": {
+        "local": {
+            "bind": "127.0.0.1:8000",
+            "type": "ephemeral"
+        }
+    }
+}

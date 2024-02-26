@@ -9,20 +9,11 @@
 
 # dfx temporary files
 .dfx/
-
-# generated files
-
-# rust
-target/
+.vessel/
+.mops/
 
 # frontend code
 node_modules/
 dist/
 
-src/declarations
-# environment variables
-.env
-
-
-.vessel
-icrc1-0.01
+Cargo.lock

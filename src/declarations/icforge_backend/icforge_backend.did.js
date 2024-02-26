@@ -1,6 +1,9 @@
 export const idlFactory = ({ IDL }) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
   const TokenMeta = IDL.Record({
     '_owner' : IDL.Principal,
     '_fee' : IDL.Nat,
@@ -17,6 +20,9 @@ export const idlFactory = ({ IDL }) => {
     'created_at' : IDL.Int,
     'isController' : IDL.Bool,
   });
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
   const definite_canister_settings = IDL.Record({
     'freezing_threshold' : IDL.Nat,
@@ -36,6 +42,7 @@ export const idlFactory = ({ IDL }) => {
     'module_hash' : IDL.Opt(IDL.Vec(IDL.Nat8)),
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
   const TokenMeta = IDL.Record({
     'owner' : IDL.Principal,
     'name' : IDL.Text,
@@ -51,6 +58,8 @@ export const idlFactory = ({ IDL }) => {
   });
   const Forge = IDL.Service({
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
   const Forge = IDL.Service({
     'deployDIPToken' : IDL.Func(
         [IDL.Text, IDL.Text, IDL.Nat, IDL.Text, IDL.Nat, IDL.Nat, IDL.Text],
@@ -62,6 +71,9 @@ export const idlFactory = ({ IDL }) => {
         [IDL.Opt(Meta)],
         [],
       ),
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
     'getCanisterStatus' : IDL.Func(
         [IDL.Principal],
@@ -71,12 +83,18 @@ export const idlFactory = ({ IDL }) => {
     'getMyTokens' : IDL.Func([], [IDL.Opt(IDL.Vec(Meta))], ['query']),
     'getTokenMeta' : IDL.Func([IDL.Principal], [IDL.Opt(Meta)], ['query']),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d245ee6 (bug fixes)
     'updateController' : IDL.Func(
         [IDL.Principal, IDL.Vec(IDL.Principal)],
         [IDL.Bool],
         [],
       ),
+<<<<<<< HEAD
+>>>>>>> d245ee6 (bug fixes)
+=======
 >>>>>>> d245ee6 (bug fixes)
   });
   return Forge;
